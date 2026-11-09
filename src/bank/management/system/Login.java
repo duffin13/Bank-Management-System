@@ -14,7 +14,7 @@ public class Login extends JFrame implements ActionListener{
     JTextField cardTextField;
     JPasswordField pinTextField;
     
-    Login() {
+    Login() { // Code for login page UI
         
         setTitle("AUTOMATED TELLER MACHINE");
         
@@ -88,7 +88,8 @@ public class Login extends JFrame implements ActionListener{
         } else if (ae.getSource() == login) {
             
         } else if (ae.getSource() == signup) {
-            
+            setVisible(false);
+            new SignupOne().setVisible(true);  
         }
     }
     
