@@ -230,6 +230,8 @@ public class SignupTwo extends JFrame implements ActionListener{
                     c.s.executeUpdate(query);
  
             //Signup3 Object
+                setVisible(false);
+                new Signup3(formno),setVisible(true);
             } catch (Exception e) {
                 // Print any database/connection error to the NetBeans Output window
                 System.out.println(e);
