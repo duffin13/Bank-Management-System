@@ -170,6 +170,7 @@ public class SignupThree extends JFrame implements ActionListener{
 
             setSize(850, 820);
             setLocation(250, 0);
+            setLocationRelativeTo(null); // centre the window on screen
             setVisible(true);
         }
 
