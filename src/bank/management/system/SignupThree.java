@@ -230,6 +230,9 @@ public class SignupThree extends JFrame implements ActionListener{
 
                      // Show the new card number and PIN to the user
                      JOptionPane.showMessageDialog(null, "Card Number: " + cardnumber + "\n Pin: " + pinnumber);
+                     
+                     setVisible(false);
+                     new Deposit(pinnumber).setVisible(false);
                  }
                 } catch (Exception e) {
                  // Print any database error to the Output window
@@ -237,7 +240,8 @@ public class SignupThree extends JFrame implements ActionListener{
                 }
 
                 } else if (ae.getSource() == cancel) {
-                // Cancel: nothing here yet
+                    setVisible(false);
+                    new Login().setVisible(true);
                 }
 }
 
